@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  user-service:
+    build:
+      context: ../user-service
+    ports:
+      - "4000:4000"
+
+  event-service:
+    build:
+      context: ../event-service
+    ports:
+      - "4001:4001"
+
+  order-service:
+    build:
+      context: ../order-service
+    ports:
+      - "4002:4002"
+
+  payment-service:
+    build:
+      context: ../payment-service
+    ports:
+      - "4003:4003"
+
+  review-service:
+    build:
+      context: ../review-service
+    ports:
+      - "4004:4004"
+
+  catalog-service:
+    build:
+      context: ../catalog-service
+    ports:
+      - "4005:4005"
